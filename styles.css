@@ -26,6 +26,9 @@ main {
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px; /* Added max-width for responsiveness */
+    width: 100%; /* Make sure it takes full width on smaller screens */
+    margin: auto; /* Center the calculator on the page */
 }
 
 #display {
@@ -41,6 +44,7 @@ main {
 
 .button-row {
     display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line on smaller screens */
 }
 
 button {
